@@ -30,21 +30,36 @@ void pop(){
 }
 void display(){
     int i;
-    if (top==0)
+    if (top==-1)
     {
-       printf("elelments");
-       for(i=top; i>0; i--)
-       printf("\n%d",a[i]);
+       printf("the stack is empty");
 
     }
     else{
-        printf("the stack is empty");
+    
+       printf("elelments");
+       for(i=top; i<0; i--){
+       printf("\n%d",a[i]);}
     }
     
 }
 int main(){
     int n;
-    printf("1.push\n2.pop\n3.display");
+    while (1)
+    {
+    
+    printf("1.push\n2.pop\n3.display\n");
     scanf("%d",&n);
-    push();
+    switch (n)
+    {
+    case 1:
+        push();
+    case 2:
+        pop();
+    case 3:
+        display();
+        break;
+    }}
+    return 0;
+
 }
