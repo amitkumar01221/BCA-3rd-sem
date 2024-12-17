@@ -4,5 +4,5 @@ def change(n):
     print(n)
 a=[10,20,30,40]
 print(a)
-change(a);
+change(a)
 print(a)

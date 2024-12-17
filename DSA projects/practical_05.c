@@ -58,6 +58,7 @@ int main(){
         pop();
     case 3:
         display();
+    default:
         break;
     }}
     return 0;
